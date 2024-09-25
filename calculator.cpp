@@ -1,6 +1,10 @@
 #include <iostream>
 
 int main() {
-  std::cout << "test" << std::endl;
+  std::cout << "電卓アプリケーション" << std::endl;
+
+  double num1, num2, result;
+  char operator;
+
   return 0;
 }
