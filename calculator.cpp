@@ -16,6 +16,17 @@ std::cin >> op;
 std::cout << "二つ目の数値を入力してください：";
 std::cin >> num2;
 
+if (op == '+') {
+  std::cout << "結果：" << num1 + num2 << std::endl;
+else if (op == '-')
+  std::cout << "結果：" << num1 - num2 << std::endl;
+else if (op == '*')
+  std::cout << "結果：" << num1 * num2 << std::endl;
+else if (op == '/')
+  std::cout << "結果：" << num1 / num2 << std::endl;
+else
+  std::cout << "無効な演算子です" << std::endl;
+}
 
   return 0;
 }
