@@ -16,9 +16,6 @@ std::cin >> op;
 std::cout << "二つ目の数値を入力してください：";
 std::cin >> num2;
 
-std::cout << num1;
-std::cout << op;
-std::cout << num2;
 
   return 0;
 }
