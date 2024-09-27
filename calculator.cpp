@@ -23,7 +23,10 @@ else if (op == '-')
 else if (op == '*')
   std::cout << "結果：" << num1 * num2 << std::endl;
 else if (op == '/')
-  std::cout << "結果：" << num1 / num2 << std::endl;
+  if (num2 != 0)
+    std::cout << "結果：" << num1 / num2 << std::endl;
+  else
+    std::cout << "エラー:0で割ることはできません" << std::endl;
 else
   std::cout << "無効な演算子です" << std::endl;
 
