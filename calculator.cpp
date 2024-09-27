@@ -17,9 +17,14 @@ int main() {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
   }
   
-  std::cout << "演算子を入力してください（+,-,*,/）：";
-  std::cin >> op;
-
+  std::cout << "演算子を入力してください（+、-、*、/）：";
+        while (!(op == '+' || op == '-' || op == '*' || op == '/')) {
+            std::cin >> op;
+            if (op != '+' && op != '-' && op != '*' && op != '/') {
+                std::cout << "無効な演算子です。再度入力してください（+、-、*、/）：" << std::endl;
+            }
+        }
+        
   std::cout << "二つ目の数値を入力してください：";
   while (!(std::cin >> num2)) {
     //無効な入力を受け取ったときにエラーメッセージを表示する
