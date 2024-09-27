@@ -43,8 +43,12 @@ int main() {
     std::cout << "無効な演算子です" << std::endl;
 
     //ループ選択
-    std::cout << "もう一度計算しますか（y/n）:";
-    std::cin >> keepRunning;
+       std::cout << "もう一度計算しますか？（y/n）：";
+        std::cin >> keepRunning;
+        while (keepRunning != 'y' && keepRunning != 'n') {
+            std::cout << "無効な入力です。'y' か 'n' を入力してください：";
+            std::cin >> keepRunning;
+        }
 
   } while (keepRunning == 'y');
   
