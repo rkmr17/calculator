@@ -10,7 +10,7 @@ int main() {
   do {
     //ユーザー入力
   std::cout << "最初の数値を入力してください：";
-  while (!(std::cin >> num2)) {
+  while (!(std::cin >> num1)) {
     //無効な入力を受け取ったときにエラーメッセージを表示する
     std::cout << "無効な入力です、再度入力してください。" << std::endl;
     std::cin.clear();
@@ -22,7 +22,12 @@ int main() {
   std::cin >> op;
 
   std::cout << "二つ目の数値を入力してください：";
-  std::cin >> num2;
+  while (!(std::cin >> num2)) {
+    //無効な入力を受け取ったときにエラーメッセージを表示する
+    std::cout << "無効な入力です、再度入力してください。" << std::endl;
+    std::cin.clear();
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+  }
 
   if (op == '+')
     std::cout << "結果：" << num1 + num2 << std::endl;
