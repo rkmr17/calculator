@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 
 int main() {
   std::cout << "電卓アプリケーション" << std::endl;
