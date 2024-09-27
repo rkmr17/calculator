@@ -17,7 +17,7 @@ int main() {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
   }
   
-  std::cout << "演算子を入力してください：";
+  std::cout << "演算子を入力してください（+,-,*,/）：";
   std::cin >> op;
 
   std::cout << "二つ目の数値を入力してください：";
